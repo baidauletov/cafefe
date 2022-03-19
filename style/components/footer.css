@@ -1,0 +1,30 @@
+.footer {
+	height: 215px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f1f1f1;
+}
+
+.footer__socail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.footer__link {
+	display: inline-block;
+	margin: 0 3px;
+}
+
+.footer__image {
+	width: 24px;
+	opacity: 0.5;
+}
+
+.footer__image:hover {
+	opacity: 0.8;
+}

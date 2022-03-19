@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Cafe</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script/toggle.js"></script>
+
+</head>
+<body>
+
+	<!-- Header BEGIN -->
+	<div class="header" id="header">
+		
+		<!-- mobile menu begin -->
+				<div class="header_mobile" >
+					<div class="header_mobile_top" >
+						
+						<a class="header__logo header__logo_mob" href="index.html">
+						<!-- <img  class="header__image" src="image/ganga.png"> -->
+						<span class="header_mobile__image">Cafe</span>
+						<!-- <span class="tooltiptext">GANGA</span> -->
+							
+						</a>
+						<div class="header_mobile_menu" onclick="showMenu()" >
+							<img src="image/menu.png" id="menuImg" >
+						</div>
+					</div>
+
+					<div class="header_mobile_nav" id="menu" >
+						<a class="header_menu_link header_menu_link__active" href="#header">Главная</a>
+						<a class="header_menu_link" href="#about">О нас</a>
+						<a class="header_menu_link" href="#menu-list">Меню</a>
+						<a class="header_menu_link" href="#adress">Наш адрес</a>
+					</div>
+				</div>
+		<!-- mobile menu end -->
+
+		<!-- Menu BEGIN -->
+		<div class="header__menu">
+
+					<a class="header__link text-header" href="#header">Главная</a>
+					<a class="header__link text-header" href="#about">О нас</a>
+					<a class="header__link text-header" href="#menu-list">Меню</a>
+					<a class="header__link text-header" href="#adress">Наш адрес</a>
+
+		</div>
+		<!-- Menu END -->
+		
+		<!-- Hero BEGIN -->
+		<div class="hero" id="hero">
+			<img src="image/coffeehouse_hero.jpg" alt="Company main image" class="hero__img">
+			<div class="hero__title">
+				<span class="hero__text">
+							the
+				</span>
+				<h1 class="hero__text">
+							Cafe
+				</h1>
+			</div>
+			<div class="hero__info">
+				<div class=" hero__info-text hero__info-text_bg-black">
+					Открыто с 1000 до 2100
+				</div>
+				<div class="hero__info-text">
+					Назарбаева 15
+				</div>
+			</div>
+		</div>
+		<!-- Hero END -->
+
+	</div>
+	<!-- Header END -->
+
+	<!-- About BEGIN -->
+	<div class="about" id=about>
+		<h2 class="about__title text-inconsolata text-title">
+			Про наше the Cafe
+		</h2>
+		<div class="about-text">
+			<p class="about-text__p text-inconsolata text-p">
+				Кафе было основано в Блабла г-ном Смитом в лотерее ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, осуществляющий работу, выполняемый в соответствии с потребностями.
+			</p>
+			<p class="about-text__p text-inconsolata text-p">
+				Помимо нашего полного меню эспрессо и бара, мы предлагаем свежие по заказу завтрак и обед сэндвичи, а также выбор сторон и салатов и другие полезные вещи.
+			</p>
+			<p class="about-text__p about-text__p_left-line text-inconsolata text-p">
+				"Используйте продукты из природы, для чего она стоит, но никогда не слишком рано, и не слишком поздно. «Свежий новый сладкий.
+				<br>
+				<br>
+				Шеф-повар, кофейник и владелец: Лиам Браун
+			</p>
+		</div>
+
+		<div class="about__photo">
+			<img class="about__image" src="image/coffeeshop_about.jpg" alt="coffeehouse main room">
+		</div>
+
+		<div class="about-info">
+			<p class="about-info__item text-inconsolata">
+				<span class="about-info__item_black text-inconsolata">Мы Открыты:  </span>каждый день с 10 00 до 21 00
+			</p>
+			<p class="about-info__item text-inconsolata">
+				<span class="about-info__item_black text-inconsolata">Наш адрес:  </span>
+				Назарбаева 15, Алматы
+			</p>
+		</div>
+
+	</div>
+	<!-- About END -->
+
+	<!-- Menu BEGIN -->
+	<div class="menu" id="menu-list">
+		<h2 class="menu__title text-inconsolata text-title">
+			Меню
+		</h2>
+
+		<div class="menu-list-inn">
+			
+			<div class="menu-list__toggle">
+				<a class="menu-list__toggle_button dark-gray text-inconsolata text-standart" href="javascript:void(0)" onclick="openMenu('eat')">
+					Eat
+				</a>
+				<a class="menu-list__toggle_button text-inconsolata text-standart" href="javascript:void(0)" onclick="openMenu('drink')">
+					Drink
+				</a>
+			</div>
+
+			<div class="menu-show">
+				
+				<!-- Eat block begin -->
+				<div class="menu-show__block show" id="eat">
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Bread Basket</h3>
+						<p class="menu-show__text">Assortment of fresh baked fruit breads and muffins 5.50</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Honey Almond Granola with Fruits</h3>
+						<p class="menu-show__text">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Belgian Waffle</h3>
+						<p class="menu-show__text">Vanilla flavored batter with malted flour 7.50</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Scrambled eggs</h3>
+						<p class="menu-show__text">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+						</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Blueberry Pancakes</h3>
+						<p class="menu-show__text">With syrup, butter and lots of berries 8.50</p>	
+					</div>
+				</div>
+				<!-- Eat block end -->
+
+				<!-- Drink block begin -->
+				<div class="menu-show__block" id="drink">
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Coffee</h3>
+						<p class="menu-show__text">Regular coffee 2.50</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Chocolato</h3>
+						<p class="menu-show__text">Chocolate espresso with milk 4.50</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Corretto</h3>
+						<p class="menu-show__text">Whiskey and coffee 5.00</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Iced tea</h3>
+						<p class="menu-show__text">Hot tea, except not hot 3.00
+						</p>	
+					</div>
+					<div class="menu-show__item">
+						<h3 class="menu-show__title">Soda</h3>
+						<p class="menu-show__text">Coke, Sprite, Fanta, </p>	
+					</div>
+				</div>
+				<!-- Drink block end -->
+
+			</div>
+
+		</div>
+		<div class="menu__photo">
+			<img class="menu__image" src="image/coffeehouse_menu.jpg" alt="coffeehouse menu presentation">
+		</div>
+	</div>
+	<!-- Menu END -->
+
+	<!-- Adress BEGIN -->
+	<div class="adress" id="adress">
+		<h2 class="adress__title text-inconsolata text-title">
+			Адрес the cafe
+		</h2>
+
+		<!-- Map BEGIN -->
+		<div class="map">
+			<div id="band_id" style="width: 100%; height: 400px"></div>
+		</div>
+		<!-- Map END -->
+
+		<p class="text-inconsolata text-standart">
+			<span class="contact__special">Также! </span> Мы предлагаем полный комплекс услуг для любого мероприятия, большого или малого. Мы понимаем ваши потребности, и мы будем обслуживать продукты питания, чтобы удовлетворить самые большие критерии их всех, как выглядеть, так и вкусно.
+		</p>
+
+		<!-- contact begin -->
+		<div class="contact" id="contact">
+			<p class="contact__text text-main text-min">
+				<span class="contact__bold">Зарезервируйте</span> столик или отправти нам сообщение:
+			</p>
+			<form class="form" id="form">
+				<input type="text"   class="form__item text-main"   placeholder="Имя"    name="name" required>
+				<input type="email"  class="form__item text-main"   placeholder="Email"   name="email" required>
+				<input type="datetime-local"   class="form__item text-main"   placeholder="Дата" name="subject" value="Дата" required>
+				<input type="text"   class="form__item text-main"   placeholder="Количество людей \ сообщение \ специальные пожелания" name="comment" required>
+				<input type="submit" class="form__button text-main text-white" value="Отправить сообщение">
+			</form>
+		</div>
+		<!-- contact end -->
+
+	</div>
+	<!-- Adress END -->
+
+	<!-- Footer BEGIN -->
+	<footer class="footer">
+		<div class="footer__socail">
+			<a class="footer__link" href="#"><img class="footer__image" src="image/001-fb.png" alt=""></a>
+			<a class="footer__link" href="#"><img class="footer__image" src="image/002-in.png" alt=""></a>
+			<a class="footer__link" href="#"><img class="footer__image" src="image/003-tw.png" alt=""></a>
+			<a class="footer__link" href="#"><img class="footer__image" src="image/004-tm.png" alt=""></a>
+			<a class="footer__link" href="#"><img class="footer__image" src="image/005-li.png" alt=""></a>
+		</div>
+		<div>
+			<span>Powered by </span><a href="#">NBS</a>
+		</div>
+	</footer>
+	<!-- Footer END -->
+
+<!-- <script src="script/slider.js"></script> -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="script/yandexMap.js"></script>
+<script src="script/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@import url( 'vendor/reset.css' );
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+/*@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');*/
+
+@import url( 'components/header.css' );
+@import url( 'components/texts.css' );
+@import url( 'components/hero.css' );
+@import url( 'components/about.css' );
+@import url( 'components/menu.css' );
+@import url( 'components/adress.css' );
+@import url( 'components/footer.css' );
+@import url( 'components/contact.css' );
+
+body {
+	background-color: #fdf5e6;
+}
